@@ -1,0 +1,17 @@
+🔁 Typical Contribution Flow
+
+Someone finds your public repo
+
+They click Fork
+
+They clone their fork
+
+They make changes
+
+They push to their own repo
+
+They click New Pull Request → targeting your repo
+
+You review it
+
+You can Accept, Reject,  Request changes
