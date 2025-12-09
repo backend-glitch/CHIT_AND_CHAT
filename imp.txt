@@ -7,20 +7,26 @@
     "mdb.mcp.server": "autoStartEnabled",
 
     "background.editor": {
+    
+
         "enabled": true,
         "useFront": true,
         "style": {
             "background-position": "center",
             "background-size": "cover",
-            "opacity": 0.15,
+            "opacity": 0.20,
             "repeat": "no-repeat",
             "content": ""
         },
         "images": [
-            "https://wallpapers-clan.com/wp-content/uploads/2024/06/anime-boy-dark-hair-casual-look-desktop-wallpaper-preview.jpg"
+            "https://wallpapers-clan.com/wp-content/uploads/2024/06/anime-boy-dark-hair-casual-look-desktop-wallpaper-preview.jpg",
+          //  "https://4kwallpapers.com/images/walls/thumbs_3t/9292.jpg",
+          //  "https://images4.alphacoders.com/129/thumbbig-1290303.webp",
+          //  "https://images7.alphacoders.com/118/thumbbig-1182697.webp"
+
         ],
         "interval": 0,
-        "random": false
+        "random": true
     },
 
     "background.auxiliaryBar": {
