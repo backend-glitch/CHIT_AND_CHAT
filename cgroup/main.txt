@@ -1,0 +1,61 @@
+
+ ©️ BILL Computation program using C .
+
+Parameters : 
+units <= 100 - 1.50 rupees/unit
+units <= 300 - 2.00 rupees/unit
+units > 300 - 2.50 rupees/unit
+
+🧾 Algo :
+1. define the variables (int units, float bill ,char choice)
+1# wrap the after program in do-while.
+2. print the message to enter the number of units.
+3. take te input using scanf.
+4. compute the units acc. to the condn using if-else-if statements
+5. print the final bill amount.
+6. ask for the choice ,if user wants to continue(yes or no).
+7. if user says no then print the message "thank you!!" and stop the program.
+8. if it says yes then return to the do{} again.
+
+🔖 Code :
+#include <stdio.h>
+
+int main() {
+    int units;
+    float bill = 0;
+    char choice;
+
+    do {
+        printf("Enter the units consumed : ");
+        scanf("%d", &units);
+
+        if (units < 0) {
+            printf("Invalid input!!\n");
+            return 0;
+        } else if (units > 0 && units <= 100) {
+            bill = units * 1.5;
+        } else if (units <= 300) {
+            bill = (100 * 1.5) + (units - 100) * 2.0;
+        } else {
+            bill = 100 * 1.5 + 200 * 2.0 + (units - 300) * 2.5;
+        }
+
+        printf("Your bill : %.2f\n", bill);
+
+        printf("Enter the choice : ");
+        scanf(" %c", &choice);
+
+    } while (choice == 'Y' || choice == 'y');
+
+    printf("Thank you !!\n");
+    return 0;
+}
+
+💡 Output : 
+Enter the units consumed : 200
+Your bill : 350.00
+Enter the choice : y
+Enter the units consumed : 56
+Your bill : 84.00
+Enter the choice : n
+Thank you !!
